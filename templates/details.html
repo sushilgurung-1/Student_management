@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          table{
+             border: 2px;
+             /* border-color: aqua; */
+             background-color: antiquewhite;
+             font-size: 45px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Final Results</h1>
+    <!-- Your name must be same which is assumed in success url -->
+    
+    <table border="2px">
+    {% for key,value in student_data.items() %}
+        <tr>
+            <th>{{ key }}</th>
+            <th>{{ value }}</th>
+        </tr>
+    {% endfor %}
+    </table>
+        
+    <form action="/">
+        <button>ADD</button>
+    </form>
+    
+    
+</body>
+</html>
